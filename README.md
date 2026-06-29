@@ -54,30 +54,30 @@ MigratAgent is built on a **stateful, cyclic multi-agent graph** orchestrated by
 
 ```
 ┌──────────────────────────────────────────────────────────────────┐
-│                        MigratAgent Pipeline                       │
-│                                                                    │
-│   Legacy Code                                                      │
-│       │                                                            │
-│       ▼                                                            │
-│  ┌─────────────┐     Business      ┌─────────────────┐            │
-│  │  🔍 Analyst  │ ─── Logic ──────▶ │  🏛️ Architect   │            │
-│  │             │     Schema         │                 │            │
-│  └─────────────┘                   └────────┬────────┘            │
-│                                             │ File & Module Plan   │
-│                                             ▼                      │
-│                                    ┌─────────────────┐            │
-│                        ◀─ Errors ─ │   💻 Coder       │            │
-│                        │           │                 │            │
-│                        │           └────────┬────────┘            │
-│                        │                    │ Generated Code       │
-│                        │                    ▼                      │
-│                        │           ┌─────────────────┐            │
-│                        └─────────  │   🧪 Tester      │            │
-│                                    │  (Sandboxed)    │            │
-│                                    └────────┬────────┘            │
-│                                             │ All Tests Green ✅   │
-│                                             ▼                      │
-│                                    Migration Report + Output       │
+│                        MigratAgent Pipeline                      │
+│                                                                  │
+│   Legacy Code                                                    │
+│       │                                                          │
+│       ▼                                                          │
+│  ┌─────────────┐     Business      ┌─────────────────┐           │
+│  │  🔍 Analyst  │ ─── Logic ──────▶ │  🏛️ Architect   │         │
+│  │             │     Schema         │                 │          │
+│  └─────────────┘                   └────────┬────────┘           │
+│                                             │ File & Module Plan │
+│                                             ▼                    │
+│                                    ┌─────────────────┐           │
+│                        ◀─ Errors ─ │   💻 Coder       │         │
+│                        │           │                 │           │
+│                        │           └────────┬────────┘           │
+│                        │                    │ Generated Code     │
+│                        │                    ▼                    │
+│                        │           ┌─────────────────┐           │
+│                        └─────────  │   🧪 Tester      │          │
+│                                    │  (Sandboxed)    │           │
+│                                    └────────┬────────┘           │
+│                                             │ All Tests Green ✅ │
+│                                             ▼                    │
+│                                    Migration Report + Output     │
 └──────────────────────────────────────────────────────────────────┘
 ```
 
